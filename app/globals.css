@@ -11,12 +11,16 @@ body,
 @layer base {
   :root {
     --gradient-text: linear-gradient(180deg, #555, #000);
+    --gradient-text-black: linear-gradient(180deg, #fff, #adadad);
   }
   .dark {
-    --gradient-text: linear-gradient(180deg, #fff, #adadad);
   }
 }
 
 .gradient-text {
   background-image: var(--gradient-text);
+}
+
+.gradient-text-black {
+  background-image: var(--gradient-text-black);
 }
