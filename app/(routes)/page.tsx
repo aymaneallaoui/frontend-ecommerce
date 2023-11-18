@@ -9,10 +9,9 @@ export const revalidate = 0;
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
+  const billboard = `${process.env.BILLBOARD_ID}`;
 
-  const billboards = await getBillboards(
-    "23eb177e-76f8-4ecb-9003-5fe1564b6dc6"
-  );
+  const billboards = await getBillboards(billboard);
   return (
     <Container>
       <div className=" space-y-10 pb-10">
